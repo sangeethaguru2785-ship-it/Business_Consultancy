@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060313">
+    <meta name="robots" content="noindex">
+    <title>Admin Dashboard | Stackly</title>
+    <link rel="icon" type="image/webp" href="images/logo-brand.webp">
+    <link rel="apple-touch-icon" href="images/logo-brand.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-body" data-dash-role="admin" data-dash-page="overview">
+    <div class="dashboard-shell" id="dashboardShell">
+        <div id="dashSidebarHost"></div>
+
+        <div class="dash-main">
+            <div id="dashTopbarHost"></div>
+
+            <main class="dash-content">
+                <div class="dash-page-head">
+                    <div>
+                        <span class="section-badge">ADMIN CONSOLE</span>
+                        <h1>Dashboard Overview</h1>
+                        <p>Welcome back, <span data-user-first-name>Arjun</span>. Here is what is happening across your practice today.</p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <button class="dash-btn" type="button"><i class="bi bi-calendar3"></i> This Month</button>
+                        <button class="dash-btn brand" type="button"><i class="bi bi-download"></i> Export Report</button>
+                    </div>
+                </div>
+
+                <div class="dash-stats">
+                    <div class="dash-stat">
+                        <div class="dash-stat-top">
+                            <span class="dash-stat-icon"><i class="bi bi-people"></i></span>
+                            <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>12.5%</span>
+                        </div>
+                        <div class="dash-stat-value">250</div>
+                        <p class="dash-stat-label">Total Clients</p>
+                    </div>
+                    <div class="dash-stat">
+                        <div class="dash-stat-top">
+                            <span class="dash-stat-icon cyan"><i class="bi bi-kanban"></i></span>
+                            <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>8.2%</span>
+                        </div>
+                        <div class="dash-stat-value">48</div>
+                        <p class="dash-stat-label">Active Projects</p>
+                    </div>
+                    <div class="dash-stat">
+                        <div class="dash-stat-top">
+                            <span class="dash-stat-icon gold"><i class="bi bi-currency-dollar"></i></span>
+                            <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>18.4%</span>
+                        </div>
+                        <div class="dash-stat-value">$4.2M</div>
+                        <p class="dash-stat-label">Revenue This Year</p>
+                    </div>
+                    <div class="dash-stat">
+                        <div class="dash-stat-top">
+                            <span class="dash-stat-icon teal"><i class="bi bi-award"></i></span>
+                            <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>2.1%</span>
+                        </div>
+                        <div class="dash-stat-value">95%</div>
+                        <p class="dash-stat-label">Client Success Rate</p>
+                    </div>
+                </div>
+
+                <div class="dash-grid">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h2>Revenue Overview</h2>
+                                <p>Actual revenue vs target across the year</p>
+                            </div>
+                            <a href="#">View report <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="dash-chart">
+                            <canvas id="revenueChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h2>Projects by Status</h2>
+                                <p>Portfolio distribution</p>
+                            </div>
+                        </div>
+                        <div class="dash-chart">
+                            <canvas id="statusChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="dash-grid equal">
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h2>Recent Projects</h2>
+                                <p>Latest engagements across the portfolio</p>
+                            </div>
+                            <a href="#">View all <i class="bi bi-arrow-right"></i></a>
+                        </div>
+                        <div class="dash-table-wrap">
+                            <table class="dash-table">
+                                <thead>
+                                    <tr>
+                                        <th>Project</th>
+                                        <th>Client</th>
+                                        <th>Progress</th>
+                                        <th>Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="cell-title">Nova Retail Transformation</td>
+                                        <td>Nova Group</td>
+                                        <td>
+                                            <div class="progress-line">
+                                                <div class="progress-track"><div class="progress-fill" style="width:78%"></div></div>
+                                                <span>78%</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="pill cyan">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-title">Helios Banking Modernization</td>
+                                        <td>Helios Bank</td>
+                                        <td>
+                                            <div class="progress-line">
+                                                <div class="progress-track"><div class="progress-fill cyan" style="width:92%"></div></div>
+                                                <span>92%</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="pill cyan">Active</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-title">Vertex Supply Chain</td>
+                                        <td>Vertex Ltd</td>
+                                        <td>
+                                            <div class="progress-line">
+                                                <div class="progress-track"><div class="progress-fill" style="width:100%"></div></div>
+                                                <span>100%</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="pill green">Completed</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-title">Lumen Health Analytics</td>
+                                        <td>Lumen Health</td>
+                                        <td>
+                                            <div class="progress-line">
+                                                <div class="progress-track"><div class="progress-fill gold" style="width:46%"></div></div>
+                                                <span>46%</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="pill rose">At Risk</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="cell-title">Orbit Cloud Migration</td>
+                                        <td>Orbit Tech</td>
+                                        <td>
+                                            <div class="progress-line">
+                                                <div class="progress-track"><div class="progress-fill" style="width:64%"></div></div>
+                                                <span>64%</span>
+                                            </div>
+                                        </td>
+                                        <td><span class="pill gold">On Hold</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="dash-card">
+                        <div class="dash-card-head">
+                            <div>
+                                <h2>Team Activity</h2>
+                                <p>What your team is working on</p>
+                            </div>
+                            <a href="#">View all</a>
+                        </div>
+                        <ul class="dash-activity">
+                            <li>
+                                <span class="dash-avatar">PS</span>
+                                <div>
+                                    <p><strong>Priya Sharma</strong> moved <strong>Helios Banking</strong> to review</p>
+                                    <small>12 minutes ago</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="dash-avatar alt">DC</span>
+                                <div>
+                                    <p><strong>Daniel Cho</strong> added 3 milestones to <strong>Nova Retail</strong></p>
+                                    <small>40 minutes ago</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="dash-avatar gold">AR</span>
+                                <div>
+                                    <p><strong>Aisha Rahman</strong> submitted the Q3 performance report</p>
+                                    <small>1 hour ago</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="dash-avatar rose">ML</span>
+                                <div>
+                                    <p><strong>Marcus Lee</strong> invited 2 teammates to <strong>Vertex</strong></p>
+                                    <small>3 hours ago</small>
+                                </div>
+                            </li>
+                            <li>
+                                <span class="dash-avatar">PS</span>
+                                <div>
+                                    <p><strong>Priya Sharma</strong> closed a deal with <strong>Northwind</strong></p>
+                                    <small>5 hours ago</small>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="dash-overlay" id="dashOverlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="js/dashboard-layout.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

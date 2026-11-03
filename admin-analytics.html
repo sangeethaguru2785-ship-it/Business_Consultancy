@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060313">
+    <meta name="robots" content="noindex">
+    <title>Analytics | Stackly</title>
+    <link rel="icon" type="image/webp" href="images/logo-brand.webp">
+    <link rel="apple-touch-icon" href="images/logo-brand.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body class="dashboard-body" data-dash-role="admin" data-dash-page="analytics">
+    <div class="dashboard-shell" id="dashboardShell">
+        <div id="dashSidebarHost"></div>
+        <div class="dash-main">
+            <div id="dashTopbarHost"></div>
+            <main class="dash-content">
+<div class="dash-page-head">
+    <div>
+        <span class="section-badge">ADMIN · ANALYTICS</span>
+        <h1>Analytics</h1>
+        <p>Deep insight into performance, pipeline and growth.</p>
+    </div>
+    <div class="d-flex gap-2"><button class="dash-btn brand" type="button"><i class="bi bi-download"></i> Export CSV</button></div>
+</div><div class="dash-stats">
+<div class="dash-stat">
+    <div class="dash-stat-top">
+        <span class="dash-stat-icon "><i class="bi bi-hourglass-split"></i></span>
+        <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>4 mo</span>
+    </div>
+    <div class="dash-stat-value">18</div>
+    <p class="dash-stat-label">Avg. Engagement (months)</p>
+</div>
+<div class="dash-stat">
+    <div class="dash-stat-top">
+        <span class="dash-stat-icon cyan"><i class="bi bi-emoji-smile"></i></span>
+        <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>6</span>
+    </div>
+    <div class="dash-stat-value">72</div>
+    <p class="dash-stat-label">Net Promoter Score</p>
+</div>
+<div class="dash-stat">
+    <div class="dash-stat-top">
+        <span class="dash-stat-icon gold"><i class="bi bi-speedometer2"></i></span>
+        <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>5%</span>
+    </div>
+    <div class="dash-stat-value">84%</div>
+    <p class="dash-stat-label">Team Utilization</p>
+</div>
+<div class="dash-stat">
+    <div class="dash-stat-top">
+        <span class="dash-stat-icon teal"><i class="bi bi-trophy"></i></span>
+        <span class="dash-trend"><i class="bi bi-arrow-up-short"></i>3%</span>
+    </div>
+    <div class="dash-stat-value">61%</div>
+    <p class="dash-stat-label">Win Rate</p>
+</div>
+</div><div class="dash-grid">
+    <div class="dash-card">
+        <div class="dash-card-head">
+            <div>
+                <h2>Revenue &amp; Pipeline</h2>
+                <p>Monthly performance against target</p>
+            </div>
+        </div>
+        <div class="dash-chart"><canvas id="analyticsRevenueChart"></canvas></div>
+    </div>
+    <div class="dash-card">
+        <div class="dash-card-head">
+            <div>
+                <h2>Revenue by Industry</h2>
+                <p>Share of total revenue</p>
+            </div>
+        </div>
+        <div class="dash-chart"><canvas id="analyticsSourceChart"></canvas></div>
+    </div>
+</div>
+            </main>
+        </div>
+    </div>
+    <div class="dash-overlay" id="dashOverlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="js/dashboard-layout.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

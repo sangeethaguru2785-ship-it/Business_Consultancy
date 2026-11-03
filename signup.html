@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060313">
+    <meta name="robots" content="noindex">
+    <title>Create Account | Stackly</title>
+    <link rel="icon" type="image/webp" href="images/logo-brand.webp">
+    <link rel="apple-touch-icon" href="images/logo-brand.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+    <link rel="stylesheet" href="css/auth.css">
+</head>
+<body class="auth-body">
+    <main class="auth-shell">
+        <aside class="auth-visual">
+            <div class="auth-visual-bg">
+                <img src="images/d1.webp" alt="Stackly team collaborating">
+            </div>
+            <div class="auth-visual-content">
+                <a href="index.html" class="auth-brand">
+                    <img src="images/logo-brand.webp" alt="Stackly logo">
+                </a>
+                <div>
+                    <h2>Join the consultancy built for ambitious leaders.</h2>
+                    <p>Create your workspace to manage engagements, track milestones and collaborate with your Stackly team.</p>
+                    <ul class="auth-features">
+                        <li><i class="bi bi-check-lg"></i> Purpose-built admin and client portals</li>
+                        <li><i class="bi bi-check-lg"></i> Live delivery and milestone tracking</li>
+                        <li><i class="bi bi-check-lg"></i> Transparent billing and documents</li>
+                    </ul>
+                </div>
+                <div class="auth-stats">
+                    <div><strong>250+</strong><span>Clients Served</span></div>
+                    <div><strong>95%</strong><span>Success Rate</span></div>
+                    <div><strong>12+</strong><span>Years of Impact</span></div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="auth-panel">
+            <a href="index.html" class="auth-mobile-brand">
+                <img src="images/logo-brand.webp" alt="Stackly logo">
+            </a>
+            <span class="section-badge">GET STARTED</span>
+            <h1 class="auth-title">Create your account</h1>
+            <p class="auth-sub">Select your account type to continue.</p>
+
+            <div class="role-switch" role="tablist" aria-label="Select account type">
+                <button type="button" data-role="admin" class="active" role="tab" aria-selected="true"><i class="bi bi-shield-lock"></i> Admin</button>
+                <button type="button" data-role="client" role="tab" aria-selected="false"><i class="bi bi-person"></i> Client</button>
+            </div>
+            <p class="role-hint" id="roleHint">Create a firm workspace to manage clients and delivery.</p>
+
+            <form class="auth-form" id="signupForm" novalidate>
+                <input type="hidden" name="role" id="authRole" value="admin">
+                <div class="mb-3">
+                    <label class="form-label" for="signupName">Full name</label>
+                    <input type="text" class="form-control" id="signupName" placeholder="Your full name" autocomplete="name" pattern="[A-Za-z\s]+" title="Only alphabets (A-Z, a-z) are allowed" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="signupEmail">Work email</label>
+                    <input type="email" class="form-control" id="signupEmail" placeholder="name@company.com" autocomplete="email" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="signupCompany">Company</label>
+                    <input type="text" class="form-control" id="signupCompany" placeholder="Your company" autocomplete="organization" required>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label" for="signupPassword">Password</label>
+                    <div class="auth-password">
+                        <input type="password" class="form-control" id="signupPassword" placeholder="Create a password" autocomplete="new-password" minlength="8" aria-describedby="signupPasswordHint" required>
+                        <button type="button" class="auth-eye" data-toggle-password="signupPassword" aria-label="Show password"><i class="bi bi-eye"></i></button>
+                    </div>
+                    <small class="auth-hint" id="signupPasswordHint">8+ characters with uppercase, lowercase, number and special character.</small>
+                </div>
+                <div class="mb-2">
+                    <label class="form-label" for="signupConfirm">Confirm password</label>
+                    <div class="auth-password">
+                        <input type="password" class="form-control" id="signupConfirm" placeholder="Re-enter your password" autocomplete="new-password" minlength="8" required>
+                        <button type="button" class="auth-eye" data-toggle-password="signupConfirm" aria-label="Show password"><i class="bi bi-eye"></i></button>
+                    </div>
+                </div>
+                <div class="auth-terms form-check">
+                    <input class="form-check-input" type="checkbox" id="agreeTerms" required>
+                    <label class="form-check-label" for="agreeTerms">I agree to the <a href="404.html" class="auth-link">Terms of Service</a> and <a href="404.html" class="auth-link">Privacy Policy</a></label>
+                </div>
+                <div class="auth-alert" id="authAlert"></div>
+                <button type="submit" class="btn btn-primary-hero">Create Account <i class="bi bi-arrow-right"></i></button>
+            </form>
+
+            <p class="auth-foot">Already have an account? <a href="login.html">Sign in</a></p>
+            <a href="index.html" class="auth-back"><i class="bi bi-arrow-left"></i> Back to website</a>
+        </section>
+    </main>
+
+    <script src="js/email-validation.js"></script>
+    <script src="js/password-validation.js"></script>
+    <script src="js/auth.js"></script>
+</body>
+</html>

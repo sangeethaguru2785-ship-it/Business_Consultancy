@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#060313">
+    <meta name="description" content="Contact Stackly to discuss your strategic challenge. Offices in New York, London and Singapore. Book a consultation with our senior team.">
+    <title>Contact Us | Stackly</title>
+    <link rel="icon" type="image/webp" href="images/logo-brand.webp">
+    <link rel="apple-touch-icon" href="images/logo-brand.webp">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Inter:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-brand.webp" alt="Stackly logo" class="brand-logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="industries.html">Industries</a></li>
+                    <li class="nav-item"><a class="nav-link" href="case-studies.html">Case Studies</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">Contact Us</a></li>
+                </ul>
+                <div class="nav-cta ms-lg-3">
+                    <a href="login.html" class="btn btn-login">Login</a>
+                    <a href="404.html" class="btn btn-consult">Book Consultation</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-hero">
+        <div class="page-hero-bg">
+            <img src="images/d4.webp" alt="Stackly office reception" class="page-hero-image">
+            <div class="page-hero-overlay"></div>
+        </div>
+        <div class="container">
+            <div class="page-hero-content">
+                <span class="hero-badge">GET IN TOUCH</span>
+                <h1 class="page-hero-title">Let's Start the <span class="text-accent">Conversation</span></h1>
+                <p class="page-hero-subtitle">Tell us about your ambition and your challenge. A senior partner will respond within one business day.</p>
+                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+                    <a href="index.html">Home</a><span class="sep">/</span><span class="current">Contact Us</span>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="section section-deep section-glow">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <div class="contact-info">
+                        <span class="section-badge">CONTACT DETAILS</span>
+                        <h2 class="section-title">Ready to Redefine What's Possible?</h2>
+                        <p class="contact-desc">Let's discuss how we can accelerate your strategic objectives and unlock extraordinary value for your enterprise.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-geo-alt"></i></div>
+                                <div>
+                                    <div class="contact-label">Visit Us</div>
+                                    <div class="contact-value">875 Park Avenue, New York, NY 10075</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-envelope"></i></div>
+                                <div>
+                                    <div class="contact-label">Email</div>
+                                    <div class="contact-value">hello@stackly.com</div>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon"><i class="bi bi-telephone"></i></div>
+                                <div>
+                                    <div class="contact-label">Call</div>
+                                    <div class="contact-value">+1 (212) 555-0192</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="contact-form-wrapper">
+                        <form class="contact-form" novalidate>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="name" placeholder="Full Name" pattern="[A-Za-z\s]+" title="Only alphabets (A-Z, a-z) are allowed" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control" name="email" placeholder="Email Address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control" name="company" placeholder="Company Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="tel" class="form-control" name="phone" placeholder="Phone Number" inputmode="numeric" pattern="[0-9]*" title="Only numeric digits (0-9) are allowed">
+                                </div>
+                                <div class="col-12">
+                                    <select class="form-control" name="service">
+                                        <option value="">Select Service Interest</option>
+                                        <option value="strategy">Strategic Planning</option>
+                                        <option value="growth">Growth Acceleration</option>
+                                        <option value="transformation">Organizational Transformation</option>
+                                        <option value="risk">Risk &amp; Resilience</option>
+                                        <option value="finance">Financial Strategy</option>
+                                        <option value="innovation">Innovation Consulting</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="Tell us about your challenge..." required></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn btn-primary-hero w-100">Send Inquiry <i class="bi bi-send"></i></button>
+                                    <div class="form-status" role="status" aria-live="polite"></div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-surface">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">WHAT HAPPENS NEXT</span>
+                <h2 class="section-title">From First Message to First Win</h2>
+                <p class="section-subtitle">A simple, transparent path to getting started</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <h3 class="process-title">Send Your Inquiry</h3>
+                    <p class="process-desc">Share your ambition and challenge through the form above — it takes just a couple of minutes.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <h3 class="process-title">Discovery Call</h3>
+                    <p class="process-desc">A senior partner responds within one business day to arrange a focused, no-obligation call.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <h3 class="process-title">Tailored Proposal</h3>
+                    <p class="process-desc">We outline the scope, team and value case so you can decide with complete clarity.</p>
+                </div>
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <h3 class="process-title">Kick-off &amp; Delivery</h3>
+                    <p class="process-desc">We mobilise a senior team quickly and start creating measurable value from week one.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">OUR OFFICES</span>
+                <h2 class="section-title">Close to Where You Operate</h2>
+                <p class="section-subtitle">Three hubs, one integrated global team</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="office-card">
+                        <h3 class="office-city"><i class="bi bi-geo-alt-fill"></i> New York</h3>
+                        <p class="office-line">875 Park Avenue</p>
+                        <p class="office-line">New York, NY 10075</p>
+                        <p class="office-line">+1 (212) 555-0192</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="office-card">
+                        <h3 class="office-city"><i class="bi bi-geo-alt-fill"></i> London</h3>
+                        <p class="office-line">12 Devonshire Square</p>
+                        <p class="office-line">London EC2M 4TE</p>
+                        <p class="office-line">+44 20 7946 0451</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="office-card">
+                        <h3 class="office-city"><i class="bi bi-geo-alt-fill"></i> Singapore</h3>
+                        <p class="office-line">8 Marina Boulevard</p>
+                        <p class="office-line">Singapore 018981</p>
+                        <p class="office-line">+65 6812 9073</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-deep section-glow">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FIND US</span>
+                <h2 class="section-title">Visit Our New York Headquarters</h2>
+                <p class="section-subtitle">Centrally located on Park Avenue — come say hello</p>
+            </div>
+            <div class="map-panel">
+                <iframe class="map-frame" src="https://www.google.com/maps?q=875+Park+Avenue,+New+York,+NY+10075&amp;output=embed" title="Map showing Stackly headquarters at 875 Park Avenue, New York" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                <div class="map-footer">
+                    <div class="map-address">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        <div>
+                            <div class="map-address-title">Stackly HQ</div>
+                            <div class="map-address-line">875 Park Avenue, New York, NY 10075</div>
+                        </div>
+                    </div>
+                    <a href="404.html" class="btn btn-ghost">Get Directions <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-surface">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">CLIENT VOICES</span>
+                <h2 class="section-title">Trusted by Visionary Leaders</h2>
+                <p class="section-subtitle">Partnerships built on trust, driven by results</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-quote">"Stackly transformed our strategic vision into reality. Their insights are razor-sharp and execution flawless."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">SC</div>
+                            <div class="author-info">
+                                <div class="author-name">Sarah Chen</div>
+                                <div class="author-title">CEO, Meridian Global</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-quote">"Unparalleled expertise. They don't just advise - they roll up their sleeves and deliver measurable value at every step."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">MR</div>
+                            <div class="author-info">
+                                <div class="author-name">Marcus Rodriguez</div>
+                                <div class="author-title">Chairman, Atlas Industries</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                        </div>
+                        <p class="testimonial-quote">"The ROI exceeded all expectations. Stackly is our strategic partner for navigating our most critical decisions."</p>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">AP</div>
+                            <div class="author-info">
+                                <div class="author-name">Amelia Patel</div>
+                                <div class="author-title">Managing Director, Nova Holdings</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-deep">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <span class="section-badge">FAQ</span>
+                        <h2 class="section-title">Questions, Answered</h2>
+                        <p class="section-subtitle">A few things clients often ask before we begin</p>
+                    </div>
+                    <div class="accordion faq" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqBodyOne" aria-expanded="true" aria-controls="faqBodyOne">How quickly can we get started?</button>
+                            </h2>
+                            <div id="faqBodyOne" class="accordion-collapse collapse show" aria-labelledby="faqOne" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Most engagements begin within two weeks of an initial conversation. For urgent situations we can mobilise a senior team in days.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBodyTwo" aria-expanded="false" aria-controls="faqBodyTwo">How do you price your work?</button>
+                            </h2>
+                            <div id="faqBodyTwo" class="accordion-collapse collapse" aria-labelledby="faqTwo" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">We use fixed-fee programmes or outcome-linked arrangements, always anchored to a clear scope and value case agreed upfront.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBodyThree" aria-expanded="false" aria-controls="faqBodyThree">Do you work with mid-sized companies?</button>
+                            </h2>
+                            <div id="faqBodyThree" class="accordion-collapse collapse" aria-labelledby="faqThree" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">Absolutely. We partner with ambitious organisations of all sizes, from scaling challengers to global enterprises.</div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="faqFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqBodyFour" aria-expanded="false" aria-controls="faqBodyFour">What happens after I send an inquiry?</button>
+                            </h2>
+                            <div id="faqBodyFour" class="accordion-collapse collapse" aria-labelledby="faqFour" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">A senior partner reviews your message and responds within one business day to arrange a focused, no-obligation discovery call.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-band">
+        <div class="container">
+            <div class="cta-inner">
+                <div>
+                    <h2 class="cta-title">Prefer to Talk It Through?</h2>
+                    <p class="cta-text">Skip the form and speak directly with a senior partner about your priorities and how we can help.</p>
+                </div>
+                <div class="cta-actions">
+                    <a href="404.html" class="btn btn-primary-hero"><i class="bi bi-telephone"></i> Call Us</a>
+                    <a href="404.html" class="btn btn-ghost"><i class="bi bi-envelope"></i> Email Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-3 col-md-6">
+                    <div class="footer-brand">
+                        <img src="images/logo-brand.webp" alt="Stackly logo" class="brand-logo">
+                    </div>
+                    <p class="footer-desc">Premium business consultancy delivering transformative strategies for visionary enterprises.</p>
+                    <div class="social-links">
+                        <a href="404.html" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+                        <a href="404.html" aria-label="X"><i class="bi bi-twitter-x"></i></a>
+                        <a href="404.html" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a href="404.html" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a href="404.html" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h4 class="footer-title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="services.html#strategic-planning">Strategic Planning</a></li>
+                        <li><a href="services.html#growth-acceleration">Growth Acceleration</a></li>
+                        <li><a href="services.html#transformation">Transformation</a></li>
+                        <li><a href="services.html#risk-resilience">Risk &amp; Resilience</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-3">
+                    <h4 class="footer-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="case-studies.html">Case Studies</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-6">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-contact">
+                        <li><i class="bi bi-geo-alt"></i><span>875 Park Avenue, New York, NY 10075</span></li>
+                        <li><i class="bi bi-telephone"></i><a href="tel:+12125550192">+1 (212) 555-0192</a></li>
+                        <li><i class="bi bi-envelope"></i><a href="mailto:hello@stackly.com">hello@stackly.com</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h4 class="footer-title">Newsletter</h4>
+                    <p class="footer-newsletter-desc">Stay informed with strategic insights</p>
+                    <form class="newsletter-form" novalidate>
+                        <input type="email" class="newsletter-input" placeholder="Your email" aria-label="Your email" required>
+                        <button class="newsletter-btn" type="submit" aria-label="Subscribe"><i class="bi bi-arrow-right"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span class="js-year">2026</span> Stackly. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
+    <script src="js/email-validation.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html>
